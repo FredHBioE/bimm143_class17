@@ -47,7 +47,7 @@ plot(g)
 
 ```{r}
 ## scripts for processing located in "inst/data-raw/"
-prok_vir_cor <- read.delim("./Data_Files/virus_prok_cor_abundant.tsv", stringsAsFactors = FALSE)
+prok_vir_cor <- read.delim("../Data_Files/virus_prok_cor_abundant.tsv", stringsAsFactors = FALSE)
 
 ## Have a peak at the first 6 rows
 head(prok_vir_cor)
@@ -144,12 +144,12 @@ plot(g, vertex.size=v.size, vertex.label=NA)
 ## Read taxonomic classification for network annotation
 
 ```{r}
-phage_id_affiliation <- read.delim("./Data_Files/phage_ids_with_affiliation.tsv")
+phage_id_affiliation <- read.delim("../Data_Files/phage_ids_with_affiliation.tsv")
 head(phage_id_affiliation)
 ```
 
 ```{r}
-bac_id_affi <- read.delim("./Data_Files/prok_tax_from_silva.tsv", stringsAsFactors = FALSE)
+bac_id_affi <- read.delim("../Data_Files/prok_tax_from_silva.tsv", stringsAsFactors = FALSE)
 head(bac_id_affi)
 ```
 
